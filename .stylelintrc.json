@@ -1,0 +1,22 @@
+{
+  "extends": [
+    "stylelint-config-standard-scss",
+    "stylelint-config-hudochenkov/order"
+  ],
+  "rules": {
+    "no-descending-specificity": null,
+    "rule-empty-line-before": [
+      "always-multi-line",
+      {
+        "except": ["after-single-line-comment", "inside-block"]
+      }
+    ],
+    "at-rule-empty-line-before": [
+      "always",
+      {
+        "ignore": ["after-comment", "inside-block"],
+        "ignoreAtRules": "import"
+      }
+    ]
+  }
+}

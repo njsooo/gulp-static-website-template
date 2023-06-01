@@ -1,0 +1,50 @@
+{
+  "name": "gulp-static-webstie-template",
+  "version": "1.0.0",
+  "description": "",
+  "private": true,
+  "scripts": {
+    "clean": "rimraf test build",
+    "dev": "gulp dev --env development",
+    "build": "gulp build --env production",
+    "prettier": "prettier --write ./src",
+    "stylelint": "stylelint ./src/scss/**/*.scss",
+    "stylelint:fix": "stylelint ./src/scss/**/*.scss --fix"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/core": "^7.21.8",
+    "@babel/preset-env": "^7.21.5",
+    "babelify": "^10.0.0",
+    "browserify": "^17.0.0",
+    "gulp": "^4.0.2",
+    "gulp-change": "^1.0.2",
+    "gulp-connect": "^5.7.0",
+    "gulp-htmlmin": "^5.0.1",
+    "gulp-posthtml": "^3.0.5",
+    "gulp-rename": "^2.0.0",
+    "gulp-sass": "^5.1.0",
+    "gulp-sourcemaps": "^3.0.0",
+    "gulp-tap": "^2.0.0",
+    "gulp-uglify": "^3.0.2",
+    "gulp-useref": "^5.0.0",
+    "gulplog": "^2.0.1",
+    "minimist": "^1.2.8",
+    "open": "^8.4.2",
+    "posthtml-extend": "^0.6.5",
+    "posthtml-include": "^1.7.4",
+    "prettier": "^2.8.8",
+    "rimraf": "^5.0.1",
+    "sass": "^1.62.1",
+    "stylelint": "^15.6.2",
+    "stylelint-config-hudochenkov": "^9.0.0",
+    "stylelint-config-standard-scss": "^9.0.0",
+    "stylelint-order": "^6.0.3",
+    "vinyl-buffer": "^1.0.1"
+  },
+  "dependencies": {
+    "lodash": "^4.17.21"
+  }
+}
